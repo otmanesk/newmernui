@@ -1,0 +1,56 @@
+{
+  "name": "mern-graphql-apollo-boilerplate",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server-install": "npm install --prefix server",
+    "node-server": "node --prefix server/server.js",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klendi/mern-apollo-graphql-boilerplate.git"
+  },
+  "author": "Klendi Gocci",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klendi/mern-apollo-graphql-boilerplate/issues"
+  },
+  "homepage": "https://github.com/klendi/mern-apollo-graphql-boilerplate#readme",
+  "dependencies": {
+    "@material-ui/core": "3.9.2",
+    "@material-ui/icons": "3.0.2",
+    "apollo-boost": "^0.3.1",
+    "apollo-server-express": "^2.0.4",
+    "chartist": "0.10.1",
+    "classnames": "2.2.6",
+    "concurrently": "^3.6.1",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.9.2",
+    "history": "4.7.2",
+    "immutable": "^4.0.0-rc.12",
+    "moment": "^2.24.0",
+    "mui-datatables": "^2.0.0-beta.58",
+    "nodemon": "^1.18.10",
+    "perfect-scrollbar": "1.4.0",
+    "prettier": "1.16.4",
+    "prop-types": "15.7.1",
+    "randomcolor": "^0.5.4",
+    "react": "16.8.1",
+    "react-apollo": "^2.5.2",
+    "react-chartist": "0.13.3",
+    "react-dom": "16.8.1",
+    "react-google-maps": "9.4.5",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "^2.1.8",
+    "react-scripts-ts": "^3.1.0",
+    "react-swipeable-views": "0.13.1",
+    "recharts": "^1.5.0",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {}
+}
