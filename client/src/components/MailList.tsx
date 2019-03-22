@@ -6,7 +6,7 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelActions from "@material-ui/core/ExpansionPanelActions";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { Avatar } from "@material-ui/core";
+// import { Avatar } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import Button from "@material-ui/core/Button";
 
@@ -31,6 +31,8 @@ const styles = (theme: Theme) => ({
     color: theme.palette.text.secondary
   },
   secondaryHeading: {
+    verticalAlign: "middle",
+
     fontSize: theme.typography.pxToRem(15)
   }
 });
@@ -72,14 +74,21 @@ class MailList extends React.Component<IMailListProps, IState> {
                 className={classes.summary}
                 expandIcon={<ExpandMoreIcon />}
               >
-                <Avatar className={classes.avatar} src={item.avatar} />
-                <Typography className={classes.heading}>{item.from}</Typography>
+                <Typography className={classes.heading}>
+                  {item.projectname}
+                </Typography>
                 <Typography className={classes.secondaryHeading}>
-                  {item.subject}
+                  {item.client}
                 </Typography>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
-                <Typography>{item.content}</Typography>
+                <Typography>{item.technologies}</Typography>
+                <br />
+                <Typography>{item.status}</Typography>
+                <br />
+
+                <Typography>{item.progress}</Typography>
+                <br />
               </ExpansionPanelDetails>
               <Divider />
               <ExpansionPanelActions>
