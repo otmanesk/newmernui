@@ -319,15 +319,16 @@ const styles = (theme: Theme) => ({
   },
   headerTileIcon: {
     fontSize: 40,
-    color: theme.palette.primary.main,
+    color: theme.palette.primary.dark,
     paddingRight: 5
   },
   tileText: {
     fontSize: 20,
-    color: theme.palette.grey["400"]
+    color: theme.palette.grey["900"]
   },
   sectionTitle: {
-    paddingLeft: theme.spacing.unit * 2
+    paddingLeft: theme.spacing.unit * 2,
+    color: theme.palette.grey["900"]
   },
   users: {
     marginBottom: 24,
